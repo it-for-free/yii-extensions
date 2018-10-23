@@ -11,7 +11,7 @@ use yii\helpers\Html;
  * 
  * Source: @author @see https://yiiframework.ru/forum/viewtopic.php?t=42622
  */
-class LinkPager extends yii\widgets\LinkPager
+class LinkPager extends \yii\widgets\LinkPager
 {
     /**
      * @inheritdoc
