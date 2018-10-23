@@ -3,21 +3,22 @@ yii addons: classes, components, patches
 
 Классы, компоненты и иные дополнения для yii (в т.ч. yii2)
 
-## Установка (Useage)
+## Установка (Usege)
 
 Установка с помощью composer:
 
 ```
 composer require it-for-free/yii-extensions:~v0.0.1
 ```
--- install via composer.
+(install via composer).
 
 ## Boostrap 4
 
 
 ### LinkPager (pagination) 
 
-Usege example:
+
+Используйте для вывода ссылок пейджинации в файле представления:
 
 ```php
 use ItForFree\YiiExtensions\Yii2\bootstrap4\LinkPager;
@@ -31,4 +32,4 @@ use ItForFree\YiiExtensions\Yii2\bootstrap4\LinkPager;
     ?>
 </div> 
 ```
--- используйте для вывода ссылок пейджинации.
+-- LinkPager usage example in view file.
