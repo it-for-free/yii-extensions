@@ -4,11 +4,13 @@ yii addons: classes, components, patches
 Классы, компоненты и иные дополнения для yii (в т.ч. yii2)
 
 ## Useage
-via composer, for example:
+
+Установка с помощью composer:
 
 ```
 composer require it-for-free/yii-extensions:~v0.0.1
 ```
+-- install via composer.
 
 ## Boostrap 4
 
