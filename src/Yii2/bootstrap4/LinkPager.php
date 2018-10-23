@@ -4,7 +4,6 @@ namespace ItForFree\YiiExtensions\Yii2\bootstrap4;
 
 use Yii;
 use yii\helpers\Html;
-use yii\widgets\LinkPager;
 
 /**
  * Блок пейджинации для bootstrap 4 и yii2.
@@ -12,7 +11,7 @@ use yii\widgets\LinkPager;
  * 
  * Source: @author @see https://yiiframework.ru/forum/viewtopic.php?t=42622
  */
-class LinkPager extends LinkPager
+class LinkPager extends yii\widgets\LinkPager
 {
     /**
      * @inheritdoc
