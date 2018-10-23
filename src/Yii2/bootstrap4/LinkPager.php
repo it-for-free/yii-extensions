@@ -9,7 +9,8 @@ use yii\helpers\Html;
  * Блок пейджинации для bootstrap 4 и yii2.
  * Pagination for bootstartp 4 and yii2.
  * 
- * Source: @author @see https://yiiframework.ru/forum/viewtopic.php?t=42622
+ * @author egor2
+ * Source: @see https://yiiframework.ru/forum/viewtopic.php?t=42622
  */
 class LinkPager extends \yii\widgets\LinkPager
 {
