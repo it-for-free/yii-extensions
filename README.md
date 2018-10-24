@@ -12,24 +12,12 @@ composer require it-for-free/yii-extensions:~v0.0.1
 ```
 (install via composer).
 
-## Boostrap 4
+## Содержимое (Contents)
+
+* [Bootstrap 4 (LinkPager)](src/Yii2/bootstrap4/README.md)
+* [ReturnUrlResetter -- Сброс ссылки возврата $User->getReturnUrl() в случае, 
+если после переадресации на страницу входа он самостоятельно покинул её 
+(reset returnUrl for user in case user leaved login page,
+ on which he was redirected)](src/Yii2/Component/ReturnUrl/README.md)
 
 
-### LinkPager (pagination) 
-
-
-Используйте для вывода ссылок пейджинации в файле представления:
-
-```php
-use ItForFree\YiiExtensions\Yii2\bootstrap4\LinkPager;
-?>
-
-<div>
-    <?php
-    echo LinkPager::widget([
-        'pagination' => $Pagination,
-    ]);
-    ?>
-</div> 
-```
--- LinkPager usage example in view file.
