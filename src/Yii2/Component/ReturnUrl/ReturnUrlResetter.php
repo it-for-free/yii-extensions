@@ -26,19 +26,20 @@ class ReturnUrlResetter extends Component
         
     protected function updateReturnUrl()
     {
-        $Request = Yii::$app->request;
-        $User = Yii::$app->getUser();
-        $url = Url::to();
-        
-        if ((Yii::$app instanceof \yii\web\Application)
-            &&!$Request->isAjax
-            && ($User->getReturnUrl() != Yii::$app->getHomeUrl())
-            && !$this->isOnLoginUrl($url, $User->loginUrl)) {
-            $Response = Yii::$app->getResponse();
-            $Response->on(Response::EVENT_BEFORE_SEND , 
-                [$this, 'handleResponseEvent'],
-                compact('Request', 'User')
-            );
+        if (Yii::$app instanceof \yii\web\Application) {
+            $Request = Yii::$app->request;
+            $User = Yii::$app->getUser();
+            $url = Url::to();
+
+            if (!$Request->isAjax
+                && ($User->getReturnUrl() != Yii::$app->getHomeUrl())
+                && !$this->isOnLoginUrl($url, $User->loginUrl)) {
+                $Response = Yii::$app->getResponse();
+                $Response->on(Response::EVENT_BEFORE_SEND , 
+                    [$this, 'handleResponseEvent'],
+                    compact('Request', 'User')
+                );
+            }
         }
     }
     
