@@ -3,7 +3,8 @@
     "type": "library",
     "description": "yii (yii2) addons: classes, components, patches",
     "keywords": ["yii", "yii2", "addon", "class", "component", "patch",
-        "pagination", "LinkPager"
+        "pagination", "LinkPager",
+        "redirect user goBack returnUrl after leave login page "
     ],
     "homepage": "http://fkn.ktu10.com/?q=node/10398",
     "license": "MIT",

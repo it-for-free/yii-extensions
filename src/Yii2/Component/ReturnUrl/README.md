@@ -15,11 +15,11 @@ after last redirect.
 
 ## Использование (Usage)
 
-1. [Установите данный пакет (Install package) it-for-free/yii-extensions](README.md)
+1. [Установите данный пакет (Install package) it-for-free/yii-extensions](/README.md)
 2. В вашем конфигурационном файле в секции `components `:
 ```php
 'ReturnUrlResetter' => [
-	'class' => 'common\components\test\ReturnUrlResetter'
+	'class' => ItForFree\YiiExtensions\Yii2\Component\ReturnUrl\ReturnUrlResetter::class
 ]
 ```
 -- add to your config file into `components` config section.
