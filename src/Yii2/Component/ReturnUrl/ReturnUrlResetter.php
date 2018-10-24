@@ -30,7 +30,8 @@ class ReturnUrlResetter extends Component
         $User = Yii::$app->getUser();
         $url = Url::to();
         
-        if (!$Request->isAjax
+        if ((Yii::$app instanceof \yii\web\Application)
+            &&!$Request->isAjax
             && ($User->getReturnUrl() != Yii::$app->getHomeUrl())
             && !$this->isOnLoginUrl($url, $User->loginUrl)) {
             $Response = Yii::$app->getResponse();
