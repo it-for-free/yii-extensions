@@ -27,9 +27,17 @@ class ReturnUrlResetter extends Component
     protected function updateReturnUrl()
     {
         if (Yii::$app instanceof \yii\web\Application) {
-            $Request = Yii::$app->request;
-            $User = Yii::$app->getUser();
-            $url = Url::to();
+            
+            try { /* не во всех окружениях приложение  конфигурируется верно (например при вызове из консоли)
+             * not all enviroments sets app params properly -- so we need checks accessability of yii core params */
+                $Request = Yii::$app->request;
+                $User = Yii::$app->getUser();
+                $url = Url::to();
+            } catch (\Exception $e) {
+                Yii::warning('Problem in ReturnUrlResetter component: '
+                    .  $e->getMessage(). "\n", 'return-url-resetter');
+                return;
+            }
 
             if (!$Request->isAjax
                 && ($User->getReturnUrl() != Yii::$app->getHomeUrl())
