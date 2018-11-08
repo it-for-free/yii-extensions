@@ -4,7 +4,8 @@
     "description": "yii (yii2) addons: classes, components, patches",
     "keywords": ["yii", "yii2", "addon", "class", "component", "patch",
         "pagination", "LinkPager",
-        "redirect user goBack returnUrl after leave login page "
+        "redirect user goBack returnUrl after leave login page ",
+        "amcharts yii yii2 amcharts3 bower "
     ],
     "homepage": "http://fkn.ktu10.com/?q=node/10398",
     "license": "MIT",

@@ -6,6 +6,8 @@ use Yii;
 use yii\web\AssetBundle;
 
 /**
+ * 
+ * base on:
  * @author Sérgio Peixoto <matematico2002@hotmail.com>
  *
  * @link https://github.com/speixoto/yii2-amcharts
@@ -14,7 +16,7 @@ use yii\web\AssetBundle;
 class AmChartAsset extends AssetBundle
 {
     public $language;
-    public $sourcePath = '@bower/amcharts/dist/amcharts3';
+    public $sourcePath = '@bower/amcharts3/amcharts';
     public $css = [];
     public $js = [
         'amcharts.js',
@@ -36,7 +38,7 @@ class AmChartAsset extends AssetBundle
     public function addTypeJs($type)
     {
         if ($type == 'stock') {
-            $path = Yii::$app->view->assetManager->publish('@bower/amcharts-stock/dist/amcharts/amstock.js');
+            $path = Yii::$app->view->assetManager->publish('@bower/amstock3/amcharts/amstock.js');
             $this->js[] = 'serial.js';
             Yii::$app->view->registerJsFile($path[1], ['depends' => self::className()]);
         } else {
@@ -57,6 +59,9 @@ class AmChartAsset extends AssetBundle
         }
     }
 
+    /**
+     * @todo needs update!
+     */
     public function addExportJs()
     {
         $exportJsPaths = [
