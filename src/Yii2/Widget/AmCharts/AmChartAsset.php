@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
 class AmChartAsset extends AssetBundle
 {
     public $language;
-    public $sourcePath = '@bower/amcharts/dist/amcharts';
+    public $sourcePath = '@bower/amcharts/dist/amcharts3';
     public $css = [];
     public $js = [
         'amcharts.js',

@@ -10,8 +10,8 @@
     "license": "MIT",
     "require": {
         "php": ">=5.3.0",
-        "bower-asset/amcharts": "*",
-        "bower-asset/amcharts-stock": "*"
+        "bower-asset/amcharts3": "*",
+        "bower-asset/amstock3": "*"
     },
     "autoload": {
         "psr-4": {
