@@ -8,9 +8,10 @@
     ],
     "homepage": "http://fkn.ktu10.com/?q=node/10398",
     "license": "MIT",
-    
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "bower-asset/amcharts": "*",
+        "bower-asset/amcharts-stock": "*"
     },
     "autoload": {
         "psr-4": {
