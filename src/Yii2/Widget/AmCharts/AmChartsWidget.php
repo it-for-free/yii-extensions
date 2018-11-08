@@ -2,8 +2,6 @@
 
 namespace ItForFree\YiiExtensions\Yii2\Widget\AmChart;
 
-namespace speixoto\amcharts;
-
 use Yii;
 use yii\web\View;
 use yii\base\InvalidConfigException;
