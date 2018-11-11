@@ -22,7 +22,7 @@ composer require it-for-free/yii-extensions:~v0.0.1
  on which he was redirected
 
 
-### Widgets (Виджеты)](src/Yii2/Component/ReturnUrl/README.md)
+### Widgets (Виджеты)
 
 * [AmCharts](src/Yii2/Widget/AmCharts/README.md) Chart widget (Виджет для популярной JS-библиотеки построения диаграмм)
 
