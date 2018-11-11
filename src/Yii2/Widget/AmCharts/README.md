@@ -1,24 +1,22 @@
-yii2-amcharts
-=============
-
-AmCharts Widget for Yii 2
+# yii2-amcharts
 
 
-Installation
-============
+Credits for author (благодарность автору):
 
-This package is registered at packagist.org, so to install it you just need to add a line to your composer.json
+* Base in  Sérgio Peixoto AmCharts Widget for Yii 2: https://github.com/speixoto/yii2-amcharts
+* На основе виджета, написанного Сергио Пексото (Sérgio Peixoto): https://github.com/speixoto/yii2-amcharts
 
-```json
-"require": {
-        "speixoto/yii2-amcharts":"*"
-},
-```
+Installation Установка 
+======================
 
-Usage
-=====
+* [Установите пакет it-for-free/yii-extensions с помощью composer (Install package it-for-free/yii-extensions via composer)](/README.md)
 
-Put in your view:
+## Usage Использование
+
+
+Put in your view (в файле представления достаточно написать --вызвать класс виджета с передачей 
+параметров диаграммы. так как это делает в js для amcharts, но, что радует,
+средствами php):
 
 ```php
 
@@ -42,10 +40,11 @@ $chartConfiguration = [
 	                   'balloonText' => '[[title]] in [[category]]:<b>[[value]]</b>'
                      ]]
 ];
-echo speixoto\amcharts\Widget::widget(['chartConfiguration' => $chartConfiguration]);
+echo \ItForFree\YiiExtensions\Yii2\Widget\AmCharts\AmChartsWidget::widget(['chartConfiguration' => $chartConfiguration]);
 ```
 
-Another example
+
+Another example (Ещё один пример):
 
 ```php
 $chartConfiguration = [
@@ -88,5 +87,10 @@ $chartConfiguration = [
         'chartCursor' => [],
         'chartScrollbar' => []
 ];
-echo speixoto\amcharts\Widget::widget(['chartConfiguration' => $chartConfiguration]);
+echo \ItForFree\YiiExtensions\Yii2\Widget\AmCharts\AmChartsWidget::widget(['chartConfiguration' => $chartConfiguration]);
 ```
+
+### Ещё примеры (More examples)
+
+* Столбцова диаграмма (serial chart): http://fkn.ktu10.com/?q=node/10551
+* Круговая диаграма (pie chart): http://fkn.ktu10.com/?q=node/10552

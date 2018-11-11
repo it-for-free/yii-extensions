@@ -15,7 +15,7 @@ after last redirect.
 
 ## Использование (Usage)
 
-1. [Установите данный пакет (Install package) it-for-free/yii-extensions](/README.md)
+1. [Установите пакет it-for-free/yii-extensions с помощью composer (Install package it-for-free/yii-extensions via composer)](/README.md)
 2. В вашем конфигурационном файле в секции `components `:
 ```php
 'ReturnUrlResetter' => [
