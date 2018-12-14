@@ -10,7 +10,7 @@ class Image extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'frontend\modules\image\controllers';
+    public $controllerNamespace = 'ItForFree\YiiExtensions\Yii2\Module\Image\controllers';
 
 
     public $baseUploadPath = '@uploadPathAlias';
