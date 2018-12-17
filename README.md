@@ -35,4 +35,4 @@ composer require it-for-free/yii-extensions:~v0.0.1
 
 ### Модули
 
-* [Модули (Загрузка и обрезка картинки на уровне модуля)](src/Yii2/Module/README.md)
+* [Модуль обрезки](src/Yii2/Module/README.md)
