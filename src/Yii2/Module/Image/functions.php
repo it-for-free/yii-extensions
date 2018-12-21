@@ -14,6 +14,6 @@ if (!function_exists('imgHandl')) {
     function imgHandl($src, $format, $options = null)
     {
         return Html::img('/image?path=' . $src . '&format=' . $format, $options);
-    {
+    }
 
 }
