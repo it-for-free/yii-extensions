@@ -1,5 +1,5 @@
 {
-    "name": "web-programmer-b-p/yii-extensions",
+    "name": "it-for-free/yii-extensions",
     "type": "library",
     "description": "yii (yii2) addons: classes, components, patches",
     "keywords": ["yii", "yii2", "addon", "class", "component", "patch",
@@ -12,8 +12,7 @@
     "require": {
         "php": ">=5.3.0",
         "bower-asset/amcharts3": "*",
-        "bower-asset/amstock3": "*",
-        "it-for-free/rusphp": "v2.0.2"
+        "bower-asset/amstock3": "*"
     },
     "autoload": {
         "psr-4": {
