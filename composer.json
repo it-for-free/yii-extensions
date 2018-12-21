@@ -19,8 +19,6 @@
     "autoload": {
         "psr-4": {
             "ItForFree\\YiiExtensions\\": "src"
-        },
-
-        "files": ["Yii2/Module/Image/functions.php"]
+        }
     }
 }
