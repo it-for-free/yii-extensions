@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 
-if (!function_exists('imgHandl')) {
+if (!function_exists('imgrsc')) {
 
     /**
      * Метод обёртка над img с возможностью обрезки фото на лету
@@ -11,7 +11,7 @@ if (!function_exists('imgHandl')) {
      * @param null $options
      * @return img
      */
-    function imgHandl($src, $format, $options = null)
+    function imgrsc($src, $format, $options = array())
     {
         return Html::img('/image?path=' . $src . '&format=' . $format, $options);
     }
