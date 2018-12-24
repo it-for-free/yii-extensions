@@ -38,8 +38,8 @@ echo imgrsc($fullImgPath, $format, $options);
 
 Функция `imgrsc()` принимает 2 обязательных параметра и один необязательный:
 1. `$fullImgPath` путь к изображению.
-2. `$format` формат изображения должен быть задан следующим образом посмотреть можно
-[здесь](https://github.com/it-for-free/rusphp/blob/master/src/File/Image/README.md).
+2. `$format` требуемый формат изображения смотри подробнее по
+[ссылка](https://github.com/it-for-free/rusphp/blob/master/src/File/Image/README.md).
 3. `$options` это родной необязательный параметр `yii/helpers/Html::img()`.
 
 Пример реального вызова:
