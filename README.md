@@ -35,4 +35,4 @@ composer require it-for-free/yii-extensions:~v0.0.1
 
 ### Модули
 
-* [Модуль динамического изменения изображения](src/Yii2/Module/README.md)
+* [Модуль динамического изменения размера изображения](src/Yii2/Module/README.md)
