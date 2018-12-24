@@ -25,9 +25,11 @@
 форматов может быть несколько, посмотреть подробную документацию можно посмотреть 
 [здесь](https://github.com/it-for-free/rusphp/blob/master/src/File/Image/README.md).
 
-## Использование обёртки над (yii/helpers/Html::img)
+
+## Использование обёртки над yii/helpers/Html::img()
 
 Общий вид функции `imgrsc()`:
+
 
 ```php
 echo imgrsc($fullImgPath, $format, $options);
@@ -35,19 +37,16 @@ echo imgrsc($fullImgPath, $format, $options);
 
 
 Функция `imgrsc()` принимает 2 обязательных параметра и один необязательный:
-1. `$fullImgPath` путь к изображению, `directoryImg/myImage.png`.
-2. `$format` формат изображения должен быть задан следующим образом `100x100` или `200x200` и т.д.
-3. `$options` это родной необязательный параметр `yii/helpers/Html::img`.
+1. `$fullImgPath` путь к изображению.
+2. `$format` формат изображения должен быть задан следующим образом посмотреть можно
+[здесь](https://github.com/it-for-free/rusphp/blob/master/src/File/Image/README.md).
+3. `$options` это родной необязательный параметр `yii/helpers/Html::img()`.
 
 Пример реального вызова:
 
 ```php
 echo imgrsc($model->img, '100x100');
 ```
-
-
-
-
 
 
 ## Конфигурирование модуля
