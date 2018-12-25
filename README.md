@@ -32,7 +32,3 @@ composer require it-for-free/yii-extensions:~v0.0.1
 (may be this will be realesed later in origianl packages):
 * [Bootstrap 4 (LinkPager)](src/Yii2/bootstrap4/README.md)
 
-
-### Модули
-
-* [Модуль динамического изменения размера изображения](src/Yii2/Module/README.md)
