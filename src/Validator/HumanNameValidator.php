@@ -13,7 +13,7 @@ class HumanNameValidator extends Validator {
     
     public function validateAttribute($model, $attribute)
     {
-        if (!StrValidator::isHumanName($attribute)) {
+        if (!StrValidator::isHumanName($model->$attribute)) {
             $this->addError($model, $attribute, 'Строка может содержать только буквы, тире и пробелы.');
         }
     }
