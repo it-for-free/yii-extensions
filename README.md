@@ -32,3 +32,8 @@ composer require it-for-free/yii-extensions:~v0.0.1
 (may be this will be realesed later in origianl packages):
 * [Bootstrap 4 (LinkPager)](src/Yii2/bootstrap4/README.md)
 
+
+### Validators (Валидаторы)
+
+Валидаторы для полей см. в соответствующей папке.
+You can see validators is suitable floder 

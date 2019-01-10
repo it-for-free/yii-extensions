@@ -40,7 +40,7 @@ $chartConfiguration = [
 	                   'balloonText' => '[[title]] in [[category]]:<b>[[value]]</b>'
                      ]]
 ];
-echo \ItForFree\YiiExtensions\Yii2\Widget\AmCharts\AmChartsWidget::widget(['chartConfiguration' => $chartConfiguration]);
+echo \ItForFree\YiiExtensions\Widget\AmCharts\AmChartsWidget::widget(['chartConfiguration' => $chartConfiguration]);
 ```
 
 
@@ -87,7 +87,7 @@ $chartConfiguration = [
         'chartCursor' => [],
         'chartScrollbar' => []
 ];
-echo \ItForFree\YiiExtensions\Yii2\Widget\AmCharts\AmChartsWidget::widget(['chartConfiguration' => $chartConfiguration]);
+echo \ItForFree\YiiExtensions\Widget\AmCharts\AmChartsWidget::widget(['chartConfiguration' => $chartConfiguration]);
 ```
 
 ### Ещё примеры (More examples)

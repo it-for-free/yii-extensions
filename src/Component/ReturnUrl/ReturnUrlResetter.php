@@ -1,6 +1,6 @@
 <?php
 
-namespace ItForFree\YiiExtensions\Yii2\Component\ReturnUrl;
+namespace ItForFree\YiiExtensions\Component\ReturnUrl;
 
 use yii\base\Component;
 use yii\helpers\Url;

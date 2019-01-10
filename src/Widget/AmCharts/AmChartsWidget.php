@@ -1,6 +1,6 @@
 <?php
 
-namespace ItForFree\YiiExtensions\Yii2\Widget\AmCharts;
+namespace ItForFree\YiiExtensions\Widget\AmCharts;
 
 use Yii;
 use yii\web\View;

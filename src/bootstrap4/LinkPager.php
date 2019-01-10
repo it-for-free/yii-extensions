@@ -1,6 +1,6 @@
 <?php
 
-namespace ItForFree\YiiExtensions\Yii2\bootstrap4;
+namespace ItForFree\YiiExtensions\bootstrap4;
 
 use Yii;
 use yii\helpers\Html;
