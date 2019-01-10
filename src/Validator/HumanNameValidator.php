@@ -3,6 +3,7 @@
 namespace ItForFree\YiiExtensions\Validator;
 
 use yii\validators\Validator;
+use ItForFree\rusphp\PHP\Str\Validator as StrValidator;
 
 /**
  * Проверка строки - может ли она быть именем человека
@@ -10,4 +11,10 @@ use yii\validators\Validator;
  */
 class HumanNameValidator extends Validator {
     
+    public function validateAttribute($model, $attribute)
+    {
+        if (!StrValidator::isHumanName($attribute)) {
+            $this->addError($model, $attribute, 'Строка может содержать только буквы, тире и пробелы.');
+        }
+    }
 }

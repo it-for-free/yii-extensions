@@ -6,15 +6,17 @@
         "pagination", "LinkPager",
         "redirect user goBack returnUrl after leave login page ",
         "amcharts yii yii2 amcharts3 bower ",
-        "yii yii2 image resize on the fly on load jpg png gif bpm "
+        "yii yii2 image resize on the fly on load jpg png gif bpm ",
+        "validator human name "
     ],
     "homepage": "http://fkn.ktu10.com/?q=node/10398",
     "license": "MIT",
     "require": {
         "php": ">=5.3.0",
+        "yiisoft/yii2": "^2.0.14",
         "bower-asset/amcharts3": "*",
         "bower-asset/amstock3": "*",
-        "it-for-free/rusphp": "dev-master"
+        "it-for-free/rusphp": "~2.0.3"
     },
     "autoload": {
         "psr-4": {
